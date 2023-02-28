@@ -31,8 +31,8 @@ const Authentication =() => {
         {/* <h1>hello i am sign in</h1> */}
         {/* <Button buttonType='google' onClick={logGoogleUser}> Sign in with Google Popup</Button> */}
        <div className='authentication-container'>
-        <SignUpForm></SignUpForm>
         <SignInForm></SignInForm>
+        <SignUpForm></SignUpForm>
 
        </div>
     </div>

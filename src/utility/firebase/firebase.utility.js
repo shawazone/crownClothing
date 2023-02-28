@@ -6,6 +6,8 @@ signInWithPopup,
 GoogleAuthProvider,
 createUserWithEmailAndPassword,
 signInWithEmailAndPassword,
+signOut,
+onAuthStateChanged
 } from 'firebase/auth'
 
 
@@ -73,6 +75,8 @@ const firebaseConfig = {
 
   };
 
+  // 😎helper functios 👇👇👇 
+
   export const  createAuthUserWithEmailAndPassword = async (email, password) =>{
   if (!email || !password) return;
 
@@ -85,4 +89,7 @@ const firebaseConfig = {
     return await signInWithEmailAndPassword(auth, email, password);
   
     };
+    export const signOutUser =  async () => await signOut(auth);
   
+ // auth singlaton 
+    export const onAuthStateChangedListner = (callback) => onAuthStateChanged(auth, callback);
