@@ -4,8 +4,6 @@ import "./sign-in-form.styles.scss";
 // import { UserConntext } from "../../contexts/user.context";
 
 import {
-  createAuthUserWithEmailAndPassword,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
   signInWithGooglePopup,
 } from "../../utility/firebase/firebase.utility";
