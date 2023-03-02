@@ -17,14 +17,15 @@ const ProductCard = ({product}) => {
    
     return (
  <div  className="product-card-container">
+
    <img  src={imageUrl}  alt={`${name}`} /> 
    <div className='footer'>
     <span className='name'>{name}</span>
     <span className='price'>{price}</span>
 
    </div>
- <Button buttonType='inverted' onClick={addProductToCart}>Add to card</Button>
- <button  onClick={addProductToCart}>Add to card</button>
+ {/* <Button  onClick={addProductToCart}>Add to card </Button> */}
+ <button className='button-containerrr' onClick={addProductToCart}>add to cart</button>
  
  </div>
 

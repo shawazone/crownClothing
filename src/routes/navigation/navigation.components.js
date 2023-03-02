@@ -19,7 +19,7 @@ const Navigation =() =>{
   // }
 
 
-  console.log(currentUser);
+  // console.log(currentUser);
     return(
        <Fragment>
          <div className='navigation'>
