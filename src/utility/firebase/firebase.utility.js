@@ -34,7 +34,7 @@ const firebaseConfig = {
   
   // Initialize Firebase
   const firebaseapp = initializeApp(firebaseConfig);
-
+ console.log(firebaseapp)
   const googleProvider = new GoogleAuthProvider();
 
   googleProvider.setCustomParameters({
@@ -52,7 +52,7 @@ const firebaseConfig = {
  export const addCollectionAndDocuments = async (
   collectoionKey,
    objectsToAdd,
-   field ,
+  
   ) => {
      const collectionRef = collection(db,collectoionKey);
      const batch = writeBatch(db);
