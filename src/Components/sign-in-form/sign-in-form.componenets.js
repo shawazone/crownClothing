@@ -8,7 +8,7 @@ import {
   signInWithGooglePopup,
 } from "../../utility/firebase/firebase.utility";
 import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
+import Button, {BUTTON_TYPE_CLASSES} from "../button/button.component";
 
 const defaultForFields = {
   email: "",
@@ -80,15 +80,13 @@ const SignInForm = () => {
         />
 
         <div className="buttons-container">
-          <Button buttonType="inverted" type="submit">
-            Sign in
-          </Button>
+          <Button buttonType="inverted" type="submit">Sign in </Button>
         </div>
       </form>
       {/* <Button onClick={signInWithGoogle} >Google sign in</Button>      */}
-      <button className="button-containerr" onClick={signInWithGoogle}>
+      <Button buttonType={BUTTON_TYPE_CLASSES.google} type='button' onClick={signInWithGoogle}>
         Google sign in
-      </button>
+      </Button>
     </div>
   );
 };
