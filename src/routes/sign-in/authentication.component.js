@@ -1,15 +1,8 @@
 import React from 'react'
-import Button from '../../Components/button/button.component';
 import SignInForm from '../../Components/sign-in-form/sign-in-form.componenets';
 import SignUpForm from '../../Components/sign-up-form/sign-up-form.componenets';
 import './authentication.scss'
 
-import { 
-  signInWithGooglePopup, 
-  createUserDocumentFromAuth,
-
- } from '../../utility/firebase/firebase.utility';
-// import { async } from '@firebase/util';
 
 
 const Authentication =() => {
